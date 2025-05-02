@@ -32,14 +32,14 @@ const RestaurantFilters: React.FC<RestaurantFiltersProps> = ({
           <div className="space-y-2">
             <Label htmlFor="area">Area</Label>
             <Select
-              value={filters.area || ""}
-              onValueChange={(value) => setFilters({ ...filters, area: value })}
+              value={filters.area || "all-areas"}
+              onValueChange={(value) => setFilters({ ...filters, area: value === "all-areas" ? "" : value })}
             >
               <SelectTrigger id="area">
                 <SelectValue placeholder="All Areas" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="">All Areas</SelectItem>
+                <SelectItem value="all-areas">All Areas</SelectItem>
                 {areas.map((area) => (
                   <SelectItem key={area} value={area}>
                     {area}
@@ -52,14 +52,14 @@ const RestaurantFilters: React.FC<RestaurantFiltersProps> = ({
           <div className="space-y-2">
             <Label htmlFor="cuisine">Cuisine</Label>
             <Select
-              value={filters.cuisine || ""}
-              onValueChange={(value) => setFilters({ ...filters, cuisine: value })}
+              value={filters.cuisine || "all-cuisines"}
+              onValueChange={(value) => setFilters({ ...filters, cuisine: value === "all-cuisines" ? "" : value })}
             >
               <SelectTrigger id="cuisine">
                 <SelectValue placeholder="All Cuisines" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="">All Cuisines</SelectItem>
+                <SelectItem value="all-cuisines">All Cuisines</SelectItem>
                 {cuisines.map((cuisine) => (
                   <SelectItem key={cuisine} value={cuisine}>
                     {cuisine}

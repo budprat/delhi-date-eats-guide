@@ -104,7 +104,7 @@ const Recommendations: React.FC = () => {
                         <SelectValue placeholder="Select area" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="">Any Area</SelectItem>
+                        <SelectItem value="all-areas">Any Area</SelectItem>
                         {areas.map((areaOption) => (
                           <SelectItem key={areaOption} value={areaOption}>
                             {areaOption}
@@ -121,7 +121,7 @@ const Recommendations: React.FC = () => {
                         <SelectValue placeholder="Select occasion" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="">Any Type</SelectItem>
+                        <SelectItem value="any-type">Any Type</SelectItem>
                         <SelectItem value="first-date">First Date</SelectItem>
                         <SelectItem value="anniversary">Anniversary/Special Occasion</SelectItem>
                         <SelectItem value="casual">Casual Date</SelectItem>
