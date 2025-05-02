@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import FeaturedRestaurants from "@/components/FeaturedRestaurants";
 import { restaurants } from "@/data/restaurants";
+import { Users, Star, Clock } from "lucide-react";
 
 const Index: React.FC = () => {
   return (

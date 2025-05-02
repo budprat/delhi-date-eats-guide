@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { Star, Users, Clock, ChevronLeft, Utensils, CupSoda, Chef } from "lucide-react";
+import { Star, Users, Clock, ChevronLeft, Utensils, CupSoda, ChefHat } from "lucide-react";
 
 const RestaurantDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -150,7 +150,7 @@ const RestaurantDetail: React.FC = () => {
                         <span className="text-sm">Food Quality</span>
                         <div className="flex">
                           {Array(5).fill(0).map((_, i) => (
-                            <Chef 
+                            <ChefHat 
                               key={i}
                               className={`h-4 w-4 ${i < restaurant.foodQuality ? "fill-curry-yellow text-curry-yellow" : "text-muted"}`}
                             />
