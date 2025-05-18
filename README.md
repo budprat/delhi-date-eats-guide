@@ -1,73 +1,77 @@
-# Welcome to your Lovable project
 
-## Project info
+# Delhi Date Eats
 
-**URL**: https://lovable.dev/projects/aa50f052-5cae-4957-8825-3ced9366f3b5
+A comprehensive guide to Delhi's restaurant scene, featuring detailed information for planning the perfect date night.
 
-## How can I edit this code?
+## Live Demo
 
-There are several ways of editing your application.
+View the live application: [Delhi Date Eats Preview](https://id-preview--aa50f052-5cae-4957-8825-3ced9366f3b5.lovable.app/)
 
-**Use Lovable**
+## Features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/aa50f052-5cae-4957-8825-3ced9366f3b5) and start prompting.
+- **Restaurant Listings**: Browse through Delhi's finest restaurants with comprehensive details.
+- **Date-Specific Metrics**: Each restaurant includes unique metrics like date score, crowd levels, and ambience ratings.
+- **Smart Filtering**: Filter restaurants by area, cuisine type, price range, date score, and crowd level.
+- **Smart Recommendations**: Get personalized restaurant suggestions based on your preferences for date type, area, and preferred crowd level.
+- **Detailed Profiles**: View detailed information about each restaurant including peak hours, best times to visit, and more.
 
-Changes made via Lovable will be committed automatically to this repo.
+## Technologies Used
 
-**Use your preferred IDE**
+- **Frontend**: React, TypeScript, Tailwind CSS
+- **UI Components**: Shadcn UI component library
+- **Routing**: React Router Dom
+- **Icons**: Lucide React
+- **Data Visualization**: Recharts (for crowd level charts)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Project Structure
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- `/src/components`: Reusable UI components
+- `/src/pages`: Application pages/routes
+- `/src/data`: Mock restaurant data
+- `/src/types`: TypeScript type definitions
 
-Follow these steps:
+## Features Coming Soon
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- User authentication
+- User reviews and ratings
+- Reservation system
+- Favorite restaurant saving
+- Mobile application
+- Integration with actual restaurant data sources
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Development
 
-# Step 3: Install the necessary dependencies.
-npm i
+This project was created with [Lovable](https://lovable.dev), an AI-powered web application development platform.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### Prerequisites
+
+- Node.js (v18+)
+- npm or yarn
+
+### Setup
+
+```bash
+# Clone the repository
+git clone [repository-url]
+
+# Navigate to project directory
+cd delhi-date-eats
+
+# Install dependencies
+npm install
+# or
+yarn install
+
+# Start development server
 npm run dev
+# or
+yarn dev
 ```
 
-**Edit a file directly in GitHub**
+## Contributing
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
 
-**Use GitHub Codespaces**
+## License
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/aa50f052-5cae-4957-8825-3ced9366f3b5) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+This project is available under the MIT License.
